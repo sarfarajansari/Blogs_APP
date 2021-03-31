@@ -1,0 +1,69 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-secondary ">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Dashboard</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <!-- <div class="btn-group me-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button> -->
+      </div>
+      
+
+    
+</main>
+<script>
+  document.querySelector("#dashboard-link").style.color=" #007bff";
+</script>
+<style>
+  .link{
+    text-decoration: none;
+    color: black;
+  }
+</style>
+
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 " style="min-height: 600px;background-image: -webkit-linear-gradient(65deg, #343b55 50%,  #5a3f8a 50%);">
+  <div class="container">
+    <h1 style="color: white;font-size: 40px;">Hello {{username}}:)</h1><br>
+    <div class="row row-cols-2 ">
+
+      <a class="link" href="{% url 'home:blogs' %}">
+        <div class="col text-center shadow p-3 mb-5 bg-body rounded ">
+            <p style="font-size:70px;">{{no_of_posts}}</p>
+            <p >Blogs</p>
+        </div>
+      </a>
+      <a class="link" href="{% url 'home:blog_points' %}">
+        <div class="col text-center shadow-sm p-3 mb-5 bg-dark text-white rounded">
+          <p style="font-size:70px;">{{BP}}</p>
+          <p >blog points (BP)</p>
+        </div>
+      </a>
+      <a class="link" href="{% url 'home:compose' %}">
+        <div class="col text-center shadow p-3 mb-5 bg-dark text-white rounded ">
+            <p style="font-size:70px;">+</p>
+            <p >compose blog</p>
+        </div>
+      </a>
+
+      
+      <a class="link " href="{% url 'home:comments_data' %}">
+        <div class="col bg-body text-center shadow p-3 mb-5 rounded ">
+          <p style="font-size:70px;">{{no_of_comments}}</p>
+          <p >comments</p>
+
+        </div>
+      </a>
+    </div>
+  </div>
+
+  
+</main>
+
+{% endblock %}

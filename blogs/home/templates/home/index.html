@@ -1,0 +1,90 @@
+{% extends 'home/layout.html' %}
+{% block body %}
+<style>
+    .main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .hover:hover{
+        color: rgb(71, 49, 168);
+    }
+    .text-center{
+        text-align: center;
+    }
+
+    
+</style>
+<div class=" main">
+    {% if success %}
+        <div class="row" >
+          <div id="success-alert">
+            <div class="alert alert-success " role="alert">
+              {{success}}
+              <button type="button" class="btn-close"  onclick="remove_alert('#success-alert')" aria-label="Close"></button>
+              
+            </div>
+          </div>
+    {% endif %}
+    {% if general %}
+          <div id="compose-alert" >
+            <div class="alert alert-primary  role="alert">
+              {{general}}
+              <button type="button right-float" class="btn-close" onclick="remove_alert('#compose-alert')"  aria-label="Close"></button>
+            </div>
+          </div class="row" style="margin-left:20%;">
+      {% endif %}
+      {% if error %}
+          <div id="error-alert">
+            <div class="alert alert-danger display-block" role="alert">
+              {{error}}
+              <button type="button right-float" class="btn-close" onclick="remove_alert('#error-alert')"  aria-label="Close"></button>
+            </div>
+          </div>
+      {% endif %}
+      {% if warning %}
+          <div id="warning-alert">
+            <div class="alert alert-primary display-block" role="alert">
+              {{warning}}
+              <button type="button right-float" class="btn-close" onclick="remove_alert('#warning-alert')" aria-label="Close"></button>
+            </div>
+          </div>
+      {% endif %}
+
+
+
+
+    
+    <h1 class="display-1">Recent Posts</h1>
+    <hr style="color: rgb(37, 30, 148);">
+    <div>
+        {% for post in posts reversed %}
+            <a class="nav-link active "  style="color: rgb(51, 51, 92);" href="{% url 'home:post' post.id %}"><h2 class="hover text-center">{{post.title}}</h2></a>
+            <p1 class="fs-5 text " style="text-align: left;">{{post.shortcont}}</p1>...
+            <a href="{% url 'home:post' post.id %}" style="color: rgb(64, 124, 124);text-decoration: none;">Read more</a>
+      <br><hr>
+        {% endfor %}
+    </div>
+
+</div>
+<script>
+    document.querySelector("#home-link").style.color="blue";
+    function remove_alert(id){
+      document.querySelector(id).style.display="none";
+    }
+</script>
+
+
+  
+</div>
+<style>
+  .btn-close{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 2;
+  }
+  .right-float{
+    float: right;
+  } 
+</style>
+{% endblock %}

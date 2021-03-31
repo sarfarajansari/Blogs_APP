@@ -1,0 +1,70 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Delete blogs</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <!-- <div class="btn-group me-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button> -->
+      </div>
+    </div>
+
+
+      {% if posts %}
+        <form action="{% url 'home:delete' %}" method="POST">
+              {% for post in posts reversed %}
+                {% if post.id %}
+                  <div class="form-check" style="background-color: white;">
+                    <input class="form-check-input" type="checkbox" value="1"  id="flexCheckDefault" name="{{post.id}}">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      {% csrf_token %}
+                    <div>
+                      <p1 style="font-weight: bold;">{{post.title}}:</p1>{{post.shortcont}}...
+                      <a href="{% url 'home:post' post.id %}"  style="color: rgb(64, 124, 124);text-decoration: none;">Read more</a>
+                    <br><hr>
+                    </div>
+                    
+                    </label>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            <button type="button" id="alert-button"  style="display: block;" onclick="delete_alert()" class="btn btn-danger">Delete selected blogs</button>
+            <div class="alert alert-danger alert-dismissible fade show" id="alert" style="display: none;" role="alert">
+              <strong>Note:</strong> This action can't be undone.
+              <button type="submit"  class="btn btn-danger" style="display: block;">Delete anyway!</button>
+              <button type="button" class="btn-close"  onclick="delete_alert()" aria-label="Close"></button>
+            </div>
+        </form>
+      {% else %}
+        <h2>You haven't composed any blog</h2>  
+        <a href="{% url 'home:compose' %} ">
+          <button type="button"  style="text-decoration: none;" class="btn btn-primary" style="display: block;">Compose now</button>
+        </a> 
+      {% endif %}
+
+
+        <script>
+          function delete_alert(){
+            if (document.querySelector("#alert-button").style.display=="block"){
+              document.querySelector("#alert-button").style.display="none";
+              document.querySelector("#alert").style.display="block";
+            }
+            else{
+              document.querySelector("#alert-button").style.display="block";
+              document.querySelector("#alert").style.display="none";
+            }
+          }
+        </script>
+    
+</main>
+
+<script>
+  document.querySelector("#delete-link").style.color=" #007bff"
+</script>
+{% endblock %}

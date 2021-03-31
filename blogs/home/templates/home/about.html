@@ -1,0 +1,43 @@
+
+{% extends 'home/layout.html' %}
+{% load static %}
+{% block body %}
+<style>
+    .main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .hover:hover{
+        color: rgb(71, 49, 168);
+    }
+    .text-center{
+        text-align: center;
+    }
+    .display-1{
+        text-align: center;
+    }
+
+
+
+</style>
+<div class=" main">
+    <h1 class="display-1">About us</h1>
+    <hr style="color: rgb(37, 30, 148);">
+    <div style="text-align:center;">
+        <p class="h4">Developer:</p>
+        <p1>Heyy! I'm Sarfaraj Ansari, a 11th grade science student and a django web developer!I have created this website for readers and writers ! This is a dynamic and responsive site that allows you to post blogs as well as costomize its design! </p1>
+    </div><hr><br>
+
+    <div style="text-align:center;">
+        <p class="h4">contact:</p>
+        <a style="text-decoration: none;color:black;" href="https://www.instagram.com/sarfarajansari_/"><ion-icon style="font-size:70px;" name="logo-instagram"></ion-icon></a>
+        <a style="text-decoration:none; color:black;" href="https://www.linkedin.com/in/sarfaraj-ansari-a0a9441b9/"><ion-icon style="font-size:70px;" name="logo-linkedin"></ion-icon></a>
+        <a style="text-decoration:none;color:black;" href="mailto:com.sarfarajansari@gmail.com"><ion-icon  style="font-size:70px;" name="mail-outline"></ion-icon></a>
+    </div>
+
+</div>
+<script>
+    document.querySelector("#about-link").style.color="blue";
+</script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock %}

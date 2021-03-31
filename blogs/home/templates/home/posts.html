@@ -1,0 +1,226 @@
+{% extends 'home/layout.html' %}
+{% block body %}
+    {% if success %}
+        <div class="row" >
+          <div id="success-alert">
+            <div class="alert alert-success " role="alert">
+              {{success}}
+              <button type="button" class="btn-close"  onclick="remove_alert('#success-alert')" aria-label="Close"></button>
+
+            </div>
+          </div>
+    {% endif %}
+    {% if general %}
+          <div id="compose-alert" >
+            <div class="alert alert-primary"  role="alert">
+              {{general}}
+              <button type="button right-float" class="btn-close" onclick="remove_alert('#compose-alert')"  aria-label="Close"></button>
+            </div>
+          </div class="row" style="margin-left:20%;">
+    {% endif %}
+    {% if error %}
+          <div id="error-alert">
+            <div class="alert alert-danger display-block" role="alert">
+              {{error}}
+              <button type="button right-float" class="btn-close" onclick="remove_alert('#error-alert')"  aria-label="Close"></button>
+            </div>
+          </div>
+    {% endif %}
+    {% if warning %}
+          <div id="warning-alert">
+            <div class="alert alert-primary display-block" role="alert">
+              {{warning}}
+              <button type="button right-float" class="btn-close" onclick="remove_alert('#warning-alert')" aria-label="Close"></button>
+            </div>
+          </div>
+    {% endif %}
+
+
+
+
+
+
+<h1 class="display-1 " id="post-title">{{post.title}}</h1>
+<hr style="color: rgb(37, 30, 148);">
+<br><br>
+<div class="margin-page">
+  <figure class="text-center " >
+    {% for para in content %}
+      <p class="fs-5 text text-paragraph " id="text-paragraph">{{para}}</p>
+      <br><br>
+    {% endfor %}
+    <figcaption class="blockquote-footer">
+      <cite class="text-paragraph" style="font-size: 25px;" title="Source Title">{{post.author}}</cite>
+    </figcaption>
+  </figure>
+  <div class="text-paragraph" style="text-decoration: underline;">
+    <ion-icon style="font-size: 30px;" name="time-outline"></ion-icon>Posted on  {{post.posting_date.date}}
+   </div>
+</div>
+
+<div class="margin-page">
+  <button type="button" class="btn btn-primary " onclick="open_close_comment()" style="display: block;" id="open-comment">Leave a Reply!</button>
+
+  <div class="shadow p-3 mb-5 bg-body rounded" id="close-comment" style="display: none;">
+     <button type="button" class="btn-close"  onclick="open_close_comment()" aria-label="Close"></button>
+    <form action="{% url 'home:comment' post.id %}" method="POST">
+          {% if not session %}
+            {% if not commentor %}
+              <div class="input-group">
+                <span class="input-group-text">First and last name</span>
+                <input type="text" aria-label="First name" class="form-control" name="first_name">
+                <input type="text" aria-label="Last name" class="form-control" name="last_name">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+                <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="email">
+              </div>
+           {% endif %}
+          {% endif %}
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Comment</span>
+            <input type="text" id="comment" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"name="comment" >
+          </div>
+          {% csrf_token %}
+          <button type="submit" class="btn btn-primary btn-lg">Post comment</button>
+    </form>
+  </div>
+</div>
+<h1 class="decorated font-monospace"><span>Comments</span></h1>
+
+<div >
+  <br><br><br>
+  {% if comments %}
+    <div class=" margin-page bd-highlight mb-3"  >
+      {% for comment in comments reversed %}
+        <div class="shadow-sm p-3 mb-5 bg-body rounded" >
+        <p1 id="date" style="float: right;font-size: 10px;">{{comment.comment_date.date}} </p1>
+          <p1 class="fs-5 fw-bold">{{comment.user.name}}</p1>
+          <br>{{comment.comment}}
+        </div>
+      {% endfor %}
+  {% else %}
+    <p class="fs-4 text " style="text-align: center;color: rgb(64, 124, 124)">There are no comments</p>
+  {% endif %}
+
+    <br><br><br>
+  </div>
+</div>
+
+
+<style>
+
+  h1{
+    text-align: center;
+  }
+    /* headlines with lines */
+
+
+  </style>
+  <script>
+  function open_close_comment(){
+    if (document.querySelector("#open-comment").style.display=="block"){
+      document.querySelector("#open-comment").style.display="none";
+      document.querySelector("#close-comment").style.display="block";
+    }
+    else{
+      document.querySelector("#open-comment").style.display="block";
+      document.querySelector("#close-comment").style.display="none";
+    }
+}
+</script>
+
+
+<script>
+  function remove_alert(id){
+    document.querySelector(id).style.display="none";
+  }
+</script>
+
+<style>
+  .btn-close,#date
+  {
+    position: relative;
+    top: 2px;
+    right: 2px;
+    z-index: 2;
+  }
+  .right-float{
+    float: right;
+  }
+  .decorated > span:before{
+        right: 100%;
+  }
+  .decorated > span:after{
+      left: 100%;
+  }
+  .decorated > span:before, .decorated > span:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      border-bottom: 2px solid;
+      width: 100vw;
+      margin: 0 20px;
+  }
+  .decorated{
+      overflow: hidden;
+      text-align: center;
+  }
+  .decorated > span{
+      position: relative;
+      display: inline-block;
+  }
+  #comment:focus{
+      height: 120px;
+  }
+  .margin-page
+  {
+    margin:5%;
+    margin-bottom: 3%;
+    margin-top: 0%;
+  }
+  /* Theme items */
+  {% if theme %}
+    body{
+      {% if theme.gradient %}
+        background-image: linear-gradient(to bottom right,{{theme.gradient.color1}},{{theme.gradient.color2}});
+      {% elif theme.bg_color %}
+        background-color: {{theme.bg_color}};
+      {% else %}
+        background-image:linear-gradient(to bottom right, rgb(163, 156, 209),      rgb(123, 117, 167));
+      {% endif %}
+
+      min-height: 1000px;
+    }
+    .text-paragraph{
+      {% if theme.textcolor %}
+        color: {{theme.textcolor}};
+      {% endif %}
+
+      {% if theme.textfont %}
+        font-family: {{theme.textfont}};
+      {% endif %}
+
+    }
+    #post-title{
+      {% if theme.titlefont %}
+        font-family: {{theme.titlefont}};
+      {% endif %}
+
+      {% if theme.titlecolor %}
+        color: {{theme.titlecolor}} ;
+      {% endif %}
+    }
+  {% else %}
+    body{
+      background-image: linear-gradient(to bottom right, rgb(163, 156, 209),      rgb(123, 117, 167));
+      min-height: 1000px;
+    }
+  {% endif %}
+    #text-paragraph{
+      text-align: left;
+    }
+
+</style>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock %}

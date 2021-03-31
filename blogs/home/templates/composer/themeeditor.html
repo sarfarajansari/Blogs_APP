@@ -1,0 +1,73 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Themes</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <!-- <div class="btn-group me-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button> -->
+      </div>
+    </div>
+    <form method="POST" action="{% url 'home:themeeditor' theme.id %}" style="margin-left: 2%;margin-left: 2%;">
+      {% csrf_token %}
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Theme title</span>
+            <input type="text" name="title" value="{{theme.title}}" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <hr>
+        <p style="font-weight: bold;">Select background color of the theme:</p>
+        <p style="font-weight: bold;">color 1:</p>
+            <input type="color" required name="color1" value="{{theme.gradient.color1}}" class="form-control form-control-color" id="exampleColorInput" name="color1"  title="Choose your color">
+
+
+            <p style="font-weight: bold;">color 2:</p>
+            <input type="color" required name="color2" value="{{theme.gradient.color2}}" class="form-control form-control-color" id="exampleColorInput" name="color1"  title="Choose your color">
+        <hr>
+
+        <p style="font-weight: bold;">Select color for the text:</p>
+        <p style="font-weight: bold;">title color:</p>
+            <input type="color" required name="titlecolor" value="{{theme.titlecolor}}"  class="form-control form-control-color" id="exampleColorInput" name="color1" value="#563d7c" title="Choose your color">
+
+
+            <p style="font-weight: bold;">content color:</p>
+            <input type="color" required name="contentcolor" value="{{theme.textcolor}}" class="form-control form-control-color" id="exampleColorInput" name="color1" value="#563d7c" title="Choose your color">
+        <hr>
+        <p style="font-weight: bold;">Select font style for the text :</p>
+
+                <p style="font-weight: bold;">Title font :</p><p1>
+                <div class="input-group mb-3">
+                    <label class="input-group-text"  for="inputGroupSelect01">Options</label>
+                    <select name="titlefont" required class="form-select" id="inputGroupSelect01">
+                        <option value="{{theme.titlefont}}" selected>{{theme.titlefont}}</option>
+                    {% for font in fontstyle %}
+                        <option value="{{font.font}}">{{font.font}}</option>
+                    {% endfor %}
+                    </select>
+                </div>
+                <p style="font-weight: bold;">content font :</p><p1>
+                  <div class="input-group mb-3">
+                      <label class="input-group-text"  for="inputGroupSelect01">Options</label>
+                      <select name="contentfont" required class="form-select" id="inputGroupSelect01">
+                          <option value="{{theme.textfont}}" selected>{{theme.textfont}}</option>
+                      {% for font in fontstyle %}
+                          <option value="{{font.font}}">{{font.font}}</option>
+                      {% endfor %}
+                      </select>
+                  </div>
+
+            <hr>
+            <button type="submit" class="btn btn-primary">Save theme</button><br><br>
+
+    </form>
+</main>
+<script>
+  document.querySelector("#edit-theme-link").style.color=" #007bff"
+</script>
+{% endblock %}

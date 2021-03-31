@@ -1,0 +1,102 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+<style>
+  .none,#closebtn1{
+    display: none;
+  }
+
+</style>
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Editor</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <!-- <div class="btn-group me-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button> -->
+      </div>
+    </div>
+
+    <div>
+        <form action="{% url 'home:editor' post.id %}" method="POST">
+          {% csrf_token %}
+          <div class="input-group">
+            <span class="input-group-text">Title & Author</span>
+            <input type="text" aria-label="First name" value="{{post.title}}" name="title" required class="form-control">
+            <input type="text" aria-label="Last name" value="{{post.author}}" name="author" required class="form-control">
+          </div><br>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Theme</label>
+            <select class="form-select" name="theme" id="inputGroupSelect01">
+              <option value="{{currenttheme.id}}" selected>{{currenttheme.title}}</option>
+              {% for theme in defaultthemes %}
+                  <option value="{{theme.id}}">{{theme.title}}</option>
+              {% endfor %}
+              {% for theme in themes %}
+                <option value="{{theme.id}}">{{theme.title}}</option>
+              {% endfor %}
+  
+            </select>
+          </div>
+          {% for para in paragraphs %}
+            <div class="mb-3" id="p{{forloop.counter}}">
+              <button type="button" class="btn-close" id="closebtn{{forloop.counter}}" onclick="addpara(2)"  aria-label="Close" style="float: right;"></button>
+              <label for="exampleFormControlTextarea1" style="font-weight: bold;"  class="form-label">Paragraph {{forloop.counter}}</label>
+              <textarea class="form-control t{{forloop.counter}}" name="{{forloop.counter}}" id="exampleFormControlTextarea1" rows="3">{{para.paragraph}}</textarea>
+            </div>
+          {% endfor %}
+          {% for i in rangelist %}
+            <div class="mb-3 none"  id="p{{i}}">
+              <button type="button" class="btn-close" onclick="addpara(2)"  aria-label="Close" style="float: right;"></button>
+              <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: bold;">Paragraph {{i}}</label>
+              <textarea class="form-control" name="{{i}}"  id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          {% endfor %}
+          <button class="btn btn-secondary" onclick="addpara(1)" id="addbutton" type="button">Add paragraph</button>
+          <button type="submit" class="btn btn-success btn-lg" style="float: right;margin-top: 20px;">Save blog</button>
+        </form>
+      </div><br><br><br>
+        <!-- <form action="{% url 'home:editor' post.id %}" method="POST">
+          <div class="input-group">
+            <span class="input-group-text">Title & Author</span>
+            <input type="text" aria-label="First name" value="{{post.title}}" name="title" required class="form-control">
+            <input type="text" aria-label="Last name" value="{{post.author}}" name="author" required class="form-control">
+          </div><br>
+          {% csrf_token %}
+          {% for p in paragraphs %}
+            <input type="text" value="{{p.paragraph}}" name="{{forloop.counter}}">
+          {% endfor %}
+          <input type="submit">
+        </form> -->
+    
+</main>
+<script>
+  document.querySelector("#edit-link").style.color=" #007bff"
+</script>
+
+<script>
+    document.querySelector(".t1").setAttribute("required", "");
+    var i={{index}};
+    function addpara(a){
+      if(a==1){
+        var pk= "#p"+String(i);
+        document.querySelector(pk).style.display="inline";
+        i+=1;
+      }
+      else{
+        i-=1;
+        var pk= "#p"+String(i);
+        document.querySelector(pk).style.display="none";
+        var tk= ".t"+String(i);
+        document.querySelector(tk).value="";
+        
+
+      }
+        
+    }
+  </script>
+{% endblock %}

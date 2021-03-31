@@ -1,0 +1,62 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Comments</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <!-- <div class="btn-group me-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button> -->
+      </div>
+    </div>
+
+      <!-- {% for comment in comments %}
+        {% if comment.id %}
+          <div class="form-check" style="background-color: white;">
+            <label class="form-check-label" for="flexCheckDefault">
+            <div>
+              <p1 style="font-weight: bold;">{{comment.user.name}}:</p1>{{comment.comment.comment}}<br>
+              From Post: <p1 style="font-weight: bold;">:</p1>
+              <a href="#"><button type="button" class="btn btn-primary" style="display: block;margin-top: 2px;">Edit blog</button></a>
+            <hr>
+            </div>
+            </label>
+          </div>
+
+          
+        {% endif %}
+      {% endfor %} -->
+      {% for post in posts reversed %}
+        {% for com in post.comments_list reversed %}
+          <div class="form-check" style="background-color: white;">
+            <label class="form-check-label" for="flexCheckDefault">
+            <div>
+              <p1 style="font-weight: bold;">{{com.user.name}}:</p1>{{com.comment.comment}}<br>
+              From Post: <p1 style="font-weight: bold;">{{post.title}}</p1>
+              <a href="{% url 'home:post' post.id %}"><button type="button" class="btn btn-primary" style="display: block;margin-top: 2px;">View post</button></a>
+            
+            </div>
+            </label>
+          </div>
+          <hr>
+        {% endfor %}
+
+      {% endfor %}
+      <!-- <button type="button" id="alert-button"  style="display: block;" onclick="delete_alert()" class="btn btn-danger">Delete selected blogs</button>
+      <div class="alert alert-danger alert-dismissible fade show" id="alert" style="display: none;" role="alert">
+        <strong>Note:</strong> This action can't be undone.
+        <button type="submit"  class="btn btn-danger" style="display: block;">Delete anyway!</button>
+        <button type="button" class="btn-close"  onclick="delete_alert()" aria-label="Close"></button>
+      </div> -->
+
+    
+</main>
+<script>
+  document.querySelector("#comments-link").style.color=" #007bff"
+</script>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+<main class="col-md-9 ms-sm-auto col-lg-10  px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Blog Points</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <!-- <div class="btn-group me-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button> -->
+      </div>
+    </div>
+    <style>
+      p1{
+        font-size: 25px;
+      }
+    </style>
+
+    <h1 class="display-1">Your blog points: {{BP}}</h1>
+    <hr><br>
+    <ul>
+      <li>
+        <p1 style="font-weight: bold;">What is blog points?</p1>
+      </li>
+      <li>
+        <p1>This is just a currency in THE YOUTH BLOG! It just represents how much you have interacted ! </p1>
+      </li>
+    </ul><hr>
+    <ul>
+      <li>
+        <p1 style="font-weight: bold;">How does it work??</p1>
+      </li>
+      <li>
+        <p1 >You get 10 BP each time you post a blog!</p1>
+      </li>
+      <li>
+        <p1 >You get 4 BP each time someone comments on you post!</p1>
+      </li>
+      <li>
+        <p1 >You get -10 BP if you delete a blog!</p1>
+      </li>
+      <hr>
+      <li>
+        <p1 style="font-weight: bold;">This is the only way through which TOP USERS can be displayed!</p1>
+      </li>
+        <hr>
+    </ul>
+
+      
+
+    
+</main>
+<script>
+  document.querySelector("#BP-link").style.color=" #007bff"
+</script>
+{% endblock %}

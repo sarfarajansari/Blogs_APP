@@ -1,0 +1,55 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">{{theme.title}}</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <!-- <div class="btn-group me-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button> -->
+      </div>
+    </div>
+      <div>
+          <ul>
+              <li>
+                  backgroung color : {{theme.gradient.color1}} to {{theme.gradient.color2}}(top to bottom gradient)
+              </li>
+              <div style="min-height: 100px;background-image: linear-gradient(to bottom right,{{theme.gradient.color1}},{{theme.gradient.color2}});"></div>
+              <hr>
+              <li>
+                title color : {{theme.titlecolor}}
+                </li>
+                <div style="min-height: 40px;background-image: linear-gradient(to bottom right,{{theme.gradient.color1}},{{theme.gradient.color2}});color:{{theme.titlecolor}}"> This is a example text with this color</div>
+                <hr>
+                <li>
+                    text color : {{theme.textcolor}}
+                </li>
+                <div style="min-height: 40px;background-image: linear-gradient(to bottom right,{{theme.gradient.color1}},{{theme.gradient.color2}});color:{{theme.textcolor}}"> This is a example text with this color</div>
+                <hr>
+
+                <li>
+                    title font: {{theme.titlefont}}
+                </li>
+                <div style="min-height: 40px;background-image: linear-gradient(to bottom right,{{theme.gradient.color1}},{{theme.gradient.color2}});font-family:{{theme.titlefont}};color:{{theme.textcolor}};">This is a example text with this font.</div>
+                <hr>
+                <li>
+                    text font:{{theme.textfont}}
+                </li>
+                <div style="min-height: 40px;background-image: linear-gradient(to bottom right,{{theme.gradient.color1}},{{theme.gradient.color2}});font-family:{{theme.textfont}};color:{{theme.textcolor}};">This is a example text with this font.</div>
+                <hr>
+          </ul>
+          
+
+      </div>
+
+    
+</main>
+<script>
+  document.querySelector("#theme-link").style.color=" #007bff"
+</script>
+{% endblock %}

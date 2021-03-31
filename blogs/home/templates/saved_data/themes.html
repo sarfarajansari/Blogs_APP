@@ -1,0 +1,46 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Themes</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+        <!-- <div class="btn-group me-2">
+          <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+          <span data-feather="calendar"></span>
+          This week
+        </button> -->
+      </div>
+    </div>
+      {% if themes %}
+        {% for theme in themes %}
+          {% if theme.id %}
+            <div class="form-check" style="background-color: white;">
+              <label class="form-check-label" for="flexCheckDefault">
+              <div>
+                <p1 style="font-weight: bold;">{{theme.title}}:</p1>
+               <div>
+                  <a href="{% url 'home:theme' theme.id %} "><button type="button" class="btn btn-primary" style="margin-top: 2px;">view theme</button></a>
+                  <a href="{% url 'home:themeeditor' theme.id %} "><button type="button" class="btn btn-primary" style="margin-top: 2px;">Edit theme</button></a>
+                  <a href="{% url 'home:delete_theme' theme.id %} "><button type="button" class="btn btn-danger" style="margin-top: 2px;">Delete theme</button></a>
+                </div>
+              </div><hr>
+              </label>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <h2>You haven't Created any theme</h2>  
+        <a href="{% url 'home:create' %} ">
+          <button type="button"  style="text-decoration: none;" class="btn btn-primary" style="display: block;">Create now</button>
+        </a> 
+      {% endif %}
+
+    
+</main>
+<script>
+  document.querySelector("#theme-link").style.color=" #007bff"
+</script>
+{% endblock %}

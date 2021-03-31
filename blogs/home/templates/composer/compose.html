@@ -1,0 +1,67 @@
+{% extends 'composer/layout.html' %}
+{% block body %}
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Compose blogs</h1>
+      <div class="btn-toolbar mb-2 mb-md-0">
+      </div>
+    </div>
+    <div>
+      <form action="{% url 'home:compose' %}" method="POST">
+        {% csrf_token %}
+        <div class="input-group">
+          <span class="input-group-text">Title & Author</span>
+          <input type="text" aria-label="First name" name="title" required class="form-control">
+          <input type="text" aria-label="Last name" value="{{author}}" name="author" required class="form-control">
+        </div><br>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect01">Theme</label>
+
+
+          <select class="form-select" name="theme" id="inputGroupSelect01">
+            <option value="" selected>Choose...</option>
+            {% for theme in defaultthemes %}
+              <option value="{{theme.theme.id}}">{{theme.theme.title}}</option>
+            {% endfor %}
+            {% for theme in themes %}
+              <option value="{{theme.id}}">{{theme.title}}</option>
+            {% endfor %}
+
+          </select>
+        </div>
+        <div class="mb-3" id="p1">
+          <label for="exampleFormControlTextarea1"   class="form-label">Paragraph 1</label>
+          <textarea class="form-control" required name="1" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        {% for i in rangelist %}
+          <div class="mb-3" style="display: none;" id="p{{i}}">
+            <button type="button" class="btn-close" onclick="addpara(2)"  aria-label="Close" style="float: right;"></button>
+            <label for="exampleFormControlTextarea1" class="form-label">Paragraph {{i}}</label>
+            <textarea class="form-control" name="{{i}}" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        {% endfor %}
+        <button class="btn btn-secondary" onclick="addpara(1)" id="addbutton" type="button">Add paragraph</button>
+        <button type="submit" class="btn btn-primary btn-lg" style="float: right;margin-top: 20px;">Post blog</button>
+      </form>
+    </div><br><br><br>
+
+</main>
+
+<script>
+  var i=2;
+  document.querySelector("#compose-link").style.color=" #007bff";
+  function addpara(a){
+    if(a==1){
+      var pk= "#p"+String(i);
+      document.querySelector(pk).style.display="inline";
+      i+=1;
+    }
+    else{
+      i-=1;
+      var pk= "#p"+String(i);
+      document.querySelector(pk).style.display="none";
+    }
+
+  }
+</script>
+{% endblock %}
