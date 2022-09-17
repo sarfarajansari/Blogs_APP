@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url,psycopg2
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +27,7 @@ SECRET_KEY = 'hlhcu2o7!vons4*laods2ar3eluccc9-lh24)1v#+li@1dhna5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['TheYouthBlog.pythonanywhere.com','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -36,6 +38,7 @@ INSTALLED_APPS = ['home',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
 ]
 
@@ -73,11 +76,25 @@ WSGI_APPLICATION = 'blogs.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+DATABASE={
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+       'NAME': 'de11am6516og3p',
+       'USER': 'qixzhezxrzwuuk',
+       'PASSWORD': '591d74e54042c8e9c1f6e03247ef05f46ef0a6c902f913293c27bcdd572df02e',
+       'HOST': 'ec2-34-200-205-45.compute-1.amazonaws.com',
+       'PORT': '5432',
+       'OPTIONS': {
+        'isolation_level': psycopg2.extensions.ISOLATION_LEVEL_SERIALIZABLE,
+    },
+   }
 }
 
 
@@ -117,20 +134,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
 MEDIA_ROOT = '/home/TheYouthBlog/blogs/media'
 MEDIA_URL = '/media/'
 # STATIC_ROOT = '/home/TheYouthBlog/blogs/static'
 STATIC_URL = '/static/'
-
+STATIC_ROOT =os.path.join(BASE_DIR,'assets')
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,"static")
 ]
+django_heroku.settings(locals())
 
-STATIC_ROOT =os.path.join(BASE_DIR,'assets')
+DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'
+
 
 
 
