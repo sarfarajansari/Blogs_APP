@@ -1,0 +1,2140 @@
+[
+    {
+        "model": "home.feedback",
+        "pk": 1,
+        "fields": {
+            "comment": "Marvelous 🤩🤩"
+        }
+    },
+    {
+        "model": "home.feedback",
+        "pk": 2,
+        "fields": {
+            "comment": "Amazing awesome 😎 Loved the content waiting to see more All the best bro💜"
+        }
+    },
+    {
+        "model": "home.feedback",
+        "pk": 3,
+        "fields": {
+            "comment": "Woahhhhh🤩🤩"
+        }
+    },
+    {
+        "model": "home.user",
+        "pk": 1,
+        "fields": {
+            "name": "Sarfaraj Ansari",
+            "email": "sakiri4444@gmail.com"
+        }
+    },
+    {
+        "model": "home.user",
+        "pk": 2,
+        "fields": {
+            "name": "Ifat",
+            "email": "ifat.khan2020@iteachschools.org"
+        }
+    },
+    {
+        "model": "home.user",
+        "pk": 3,
+        "fields": {
+            "name": "Muskan shaikh ",
+            "email": "muskanshaikh072003@gmail.com"
+        }
+    },
+    {
+        "model": "home.user",
+        "pk": 4,
+        "fields": {
+            "name": "Muskan shaikh",
+            "email": "muskanshaikh072003@gmail.com"
+        }
+    },
+    {
+        "model": "home.user",
+        "pk": 5,
+        "fields": {
+            "name": "Nandeene",
+            "email": "nandeenesurwade28@gmail.com"
+        }
+    },
+    {
+        "model": "home.user",
+        "pk": 6,
+        "fields": {
+            "name": "Dumb",
+            "email": "masumashaikhedu@gmail.com"
+        }
+    },
+    {
+        "model": "home.user",
+        "pk": 7,
+        "fields": {
+            "name": "Mahfuj alam",
+            "email": "mahfuj00778866@gmail.com"
+        }
+    },
+    {
+        "model": "home.comments",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "comment": 1,
+            "comment_date": "2021-03-31T15:57:13.824Z"
+        }
+    },
+    {
+        "model": "home.comments",
+        "pk": 2,
+        "fields": {
+            "user": 3,
+            "comment": 2,
+            "comment_date": "2021-03-31T16:07:25.232Z"
+        }
+    },
+    {
+        "model": "home.comments",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "comment": 3,
+            "comment_date": "2021-03-31T17:01:02.846Z"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 1,
+        "fields": {
+            "paragraph": "This is a blog"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 10,
+        "fields": {
+            "paragraph": "klds"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 11,
+        "fields": {
+            "paragraph": "vx"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 16,
+        "fields": {
+            "paragraph": "The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics. The franchise includes comic books, short films, television series, and digital series. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters."
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 17,
+        "fields": {
+            "paragraph": "The first MCU film is Iron Man (2008), which began the films of Phase One culminating in the crossover film The Avengers (2012). Phase Two began with Iron Man 3 (2013) and concluded with Ant-Man (2015). Phase Three began with Captain America: Civil War (2016) and concluded with Spider-Man: Far From Home (2019). The first three phases in the franchise are collectively known as \"The Infinity Saga\". The films of Phase Four will begin with Black Widow (2021)."
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 18,
+        "fields": {
+            "paragraph": "Marvel Television expanded the universe to network television with Agents of S.H.I.E.L.D. on ABC in 2013, followed by streaming television with Daredevil on Netflix in 2015 and Runaways on Hulu in 2017, and cable television with Cloak & Dagger on Freeform in 2018. Marvel Television produced the digital series Agents of S.H.I.E.L.D.: Slingshot. Marvel Studios expanded to streaming television with Disney+, starting with WandaVision in 2021 as the beginning of Phase Four. Soundtrack albums have been released for all the films and many of the television series, as well as compilation albums containing existing music heard in the films. The MCU includes tie-in comics published by Marvel Comics, while Marvel Studios has produced a series of direct-to-video short films, called Marvel One-Shots, and a viral marketing campaign for its films and the universe with the faux news program WHIH Newsfront."
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 19,
+        "fields": {
+            "paragraph": "The franchise has been commercially successful and has generally received a positive critical response. It has inspired other film and television studios with comic book character adaptation rights to attempt to create similar shared universes. The MCU has been the focus of other media, outside of the shared universe, including attractions at various Walt Disney Parks and Resorts, an attraction at Discovery Times Square, a Queensland Gallery of Modern Art exhibit, two television specials, guidebooks for each film, multiple tie-in video games, and commercials."
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 20,
+        "fields": {
+            "paragraph": "The desperate soul\r\n Was delibrately in search of u\r\n When you were not around\r\n Seeker in me sobbing \r\n Behind the curtain \r\n But before the worldly stage \r\n A joker in me was in full swing \r\n To avoid any strain on the face\r\n Although l have forgotten you\r\n Long back after placing you\r\n In the temple of the heart \r\n Where I worship \r\n You in my solitude \r\n Without having any expectation\r\n To see you ever again \r\n But remained always desperate \r\n To know the climax of my story \r\n Which untimely ended \r\n Without \r\n The end"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 51,
+        "fields": {
+            "paragraph": "The journey of life isn't that difficult as we think......\r\nIt's just that before even starting that full journey..We end up giving up on it \r\n\r\nBut Always remember one thing ...\r\nGiving up is never a best solution of anything....it's showing that you are not ready to put in your 💯 into it ...\r\n\r\nWe all know that people say and sometimes even we think of it \"WHAT IF I DON'T GET SUCCESS WHAT IF I FAIL\".... RIGHT????\r\nBUT see life hasn't ended  yet the universe is still there earth still rotates\r\nYou see? It Didn't life keeps going on and on \r\n\r\nAND NEVER FEEL SAD WHEN YOU HAVE FAILED IN SOMETHING ... BECAUSE THAT'S OUR FIRST TIME OF OUR LIFE WHEN WE have LEARNT SOMETHING............\r\n\r\nNever follow others step \r\nFollow your own steps \r\nWalk on your thoughts.....\r\nNot on others thought 💭\r\nCreate your own future ✌️\r\nDon't go on the future which is already created by otheers ...\r\nFollow your heart\r\nOther organs (people)will follow you back 🔙\r\nHear your inner voice (Beautiful)\r\nNot that noise that let you down (sound pollution)\r\nBeing different is not wrong...\r\nIt's Just that people are seeing you for the first time .."
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 82,
+        "fields": {
+            "paragraph": "Hh"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 84,
+        "fields": {
+            "paragraph": "Once there was a cruel or  maybe an ugly, unwanted girl. Who always thought she deserves the worst. The girl who hates being appreciated.\r\nShe wasn't intelligent,shrewd or smart. \r\nBut she can rigoursly evaluate the  gravity of her dreams, how heavy they were to her real self.\r\nWhatever she visualise never ever matched to her realities. \r\nThe way she look to the world, she presumed herself that she is very much distant from her heavy dreams. \r\nWhile she was relating both of the world she felt obtuse.\r\nAll the negativity start eating up emotions, feelings, happiness.\r\nPeople around were like why did she have so many negative inclination about herself? \r\nWhat is she struggling at? Why shes being negative all the time? How can a person be happy and this negative at the same time?\r\nNegative – why this word suddenly felt so inaccurate?\r\nMaybe because she was dark, she was good in understanding emotions but what is the right thing to do? To put together the standards, the comparison of both the worlds.\r\nTo herself she wasn't either negative  or positive.\r\nIt was HER.\r\nShe sees herself on a different level.\r\nSomething to reflect upon.\r\nThat she could display herself a little more better.\r\nShe could change and start over again and not to create thought just like\r\n the initial lines of the passage.\r\n                                        ~Masuma Shaikh"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 86,
+        "fields": {
+            "paragraph": "The desperate soul\r\n "
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 87,
+        "fields": {
+            "paragraph": "Was delibrately in search of u"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 88,
+        "fields": {
+            "paragraph": " When you were not around"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 89,
+        "fields": {
+            "paragraph": "Seeker in me sobbing"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 90,
+        "fields": {
+            "paragraph": "Behind the curtain "
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 91,
+        "fields": {
+            "paragraph": "But before the worldly stage "
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 92,
+        "fields": {
+            "paragraph": "A joker in me was in full swing"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 93,
+        "fields": {
+            "paragraph": " To avoid any strain on the face"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 94,
+        "fields": {
+            "paragraph": "Although l have forgotten you"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 95,
+        "fields": {
+            "paragraph": "Long back after placing you"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 96,
+        "fields": {
+            "paragraph": "In the temple of the heart "
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 97,
+        "fields": {
+            "paragraph": "Where I worship "
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 98,
+        "fields": {
+            "paragraph": "You in my solitude"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 99,
+        "fields": {
+            "paragraph": "Without having any expectation"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 100,
+        "fields": {
+            "paragraph": "To see you ever again\r\n\r\n But remained always desperate \r\n\r\n To know the climax of my story \r\n\r\n Which untimely ended \r\n\r\n Without \r\n\r\n The end"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 101,
+        "fields": {
+            "paragraph": "The people whos name our Sarfaraj dont need appreciation cause they are already smart and intelligent!\r\nAlso this sarafraj is smart pehle se hi. Hes kind,good hearted or bhi bahut qualities lekin abhi bas check krne ke liye itna khaafi hai baadme if possible Mai puri kitaab likhdu SARFARAJ pe."
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 102,
+        "fields": {
+            "paragraph": "Who am I to teach,\r\nWho am I to preach,\r\nWho am I for the seed to be sowed\r\nWho am I for the boat to be rowed\r\nWho am I if I can't help the world alone\r\nBut,\r\nLittle do I know,\r\nFor the only one also if I do,\r\nIt would mean the world for that one.\r\nI may be not as vast as the almighty universe,\r\nBut the whole vast universe is what resides within me.\r\nIf whatever I do,\r\nDoesn't hurt anyone\r\nOr would the good out of them\r\nThen I shall not think twice \r\nBefore sowing the seed\r\nOr before rowing the boat\r\n\r\n-Nandeene"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 103,
+        "fields": {
+            "paragraph": "thid is pe"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 104,
+        "fields": {
+            "paragraph": "thsis"
+        }
+    },
+    {
+        "model": "home.paragraphs",
+        "pk": 105,
+        "fields": {
+            "paragraph": "tsghdstyas"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 1,
+        "fields": {
+            "font": "unset"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 2,
+        "fields": {
+            "font": "initial"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 3,
+        "fields": {
+            "font": "inherit"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 4,
+        "fields": {
+            "font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 5,
+        "fields": {
+            "font": "'Courier New', Courier, monospace"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 6,
+        "fields": {
+            "font": "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 7,
+        "fields": {
+            "font": "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 8,
+        "fields": {
+            "font": "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 9,
+        "fields": {
+            "font": "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 10,
+        "fields": {
+            "font": "'Times New Roman', Times, serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 11,
+        "fields": {
+            "font": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 12,
+        "fields": {
+            "font": "Arial, Helvetica, sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 13,
+        "fields": {
+            "font": "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 14,
+        "fields": {
+            "font": "Georgia, 'Times New Roman', Times, serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 15,
+        "fields": {
+            "font": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 16,
+        "fields": {
+            "font": "Verdana, Geneva, Tahoma, sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 17,
+        "fields": {
+            "font": "cursive"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 18,
+        "fields": {
+            "font": "fantasy"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 19,
+        "fields": {
+            "font": "monospace"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 20,
+        "fields": {
+            "font": "sans-serif"
+        }
+    },
+    {
+        "model": "home.fontstyles",
+        "pk": 21,
+        "fields": {
+            "font": "serif"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 4,
+        "fields": {
+            "color1": "#5e0bcb",
+            "color2": "#212022"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 5,
+        "fields": {
+            "color1": "#563d7c",
+            "color2": "#563d7c"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 6,
+        "fields": {
+            "color1": "#202022",
+            "color2": "#000000"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 8,
+        "fields": {
+            "color1": "#232325",
+            "color2": "#6600ff"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 9,
+        "fields": {
+            "color1": "#0000ff",
+            "color2": "#20183d"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 10,
+        "fields": {
+            "color1": "#000000",
+            "color2": "#ffffff"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 12,
+        "fields": {
+            "color1": "#0000d9",
+            "color2": "#ffffff"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 13,
+        "fields": {
+            "color1": "#0000ff",
+            "color2": "#ffffff"
+        }
+    },
+    {
+        "model": "home.gradient",
+        "pk": 14,
+        "fields": {
+            "color1": "#563d7c",
+            "color2": "#563d7c"
+        }
+    },
+    {
+        "model": "home.theme",
+        "pk": 1,
+        "fields": {
+            "title": "Blue-black",
+            "gradient": 9,
+            "textcolor": "#ffffff",
+            "titlecolor": "#ffffff",
+            "textfont": "Arial, Helvetica, sans-serif",
+            "titlefont": "monospace"
+        }
+    },
+    {
+        "model": "home.theme",
+        "pk": 6,
+        "fields": {
+            "title": "Black",
+            "gradient": 10,
+            "textcolor": "#ffffff",
+            "titlecolor": "#000000",
+            "textfont": "sans-serif",
+            "titlefont": "monospace"
+        }
+    },
+    {
+        "model": "home.theme",
+        "pk": 7,
+        "fields": {
+            "title": "Motivation and Happiness",
+            "gradient": 12,
+            "textcolor": "#563d7c",
+            "titlecolor": "#000000",
+            "textfont": "'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif",
+            "titlefont": "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
+        }
+    },
+    {
+        "model": "home.theme",
+        "pk": 8,
+        "fields": {
+            "title": "The emerging universe ",
+            "gradient": 13,
+            "textcolor": "#563d7c",
+            "titlecolor": "#563d7c",
+            "textfont": "sans-serif",
+            "titlefont": "sans-serif"
+        }
+    },
+    {
+        "model": "home.defaultthemes",
+        "pk": 1,
+        "fields": {
+            "theme": 1
+        }
+    },
+    {
+        "model": "home.defaultthemes",
+        "pk": 2,
+        "fields": {
+            "theme": 6
+        }
+    },
+    {
+        "model": "home.defaultthemes",
+        "pk": 3,
+        "fields": {
+            "theme": 8
+        }
+    },
+    {
+        "model": "home.article",
+        "pk": 2,
+        "fields": {
+            "title": "Marvel Cinematic Universe",
+            "author": "Sarfaraj Ansari",
+            "likes": 0,
+            "shortcont": "The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books ",
+            "posting_date": "2021-03-31T13:31:19.457Z",
+            "comments": [
+                1,
+                2
+            ],
+            "content": [
+                16,
+                17,
+                18,
+                19
+            ],
+            "theme": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "home.article",
+        "pk": 6,
+        "fields": {
+            "title": "🌼Ultimately ended🌼 ",
+            "author": "Floating_randoms",
+            "likes": 0,
+            "shortcont": "The desperate soul ",
+            "posting_date": "2021-03-31T16:14:23.070Z",
+            "comments": [],
+            "content": [
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100
+            ],
+            "theme": [
+                6
+            ]
+        }
+    },
+    {
+        "model": "home.article",
+        "pk": 7,
+        "fields": {
+            "title": "What's Life",
+            "author": "Muskan shaikh",
+            "likes": 0,
+            "shortcont": "The journey of life isn't that difficult as we think...... It's just that before even starting that full journey..We end up giving up on it But Always remember one thing ... Giving up is never ",
+            "posting_date": "2021-03-31T16:20:38.549Z",
+            "comments": [],
+            "content": [
+                51
+            ],
+            "theme": []
+        }
+    },
+    {
+        "model": "home.article",
+        "pk": 9,
+        "fields": {
+            "title": "The emerging universe ",
+            "author": "Nandeene",
+            "likes": 0,
+            "shortcont": "Who am I to teach, Who am I to preach, Who am I for the seed to be sowed Who am I for the boat to be rowed Who am I if I can't help ",
+            "posting_date": "2021-03-31T16:56:31.321Z",
+            "comments": [
+                3
+            ],
+            "content": [
+                102
+            ],
+            "theme": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "home.article",
+        "pk": 10,
+        "fields": {
+            "title": "The two worlds",
+            "author": "Idiot",
+            "likes": 0,
+            "shortcont": "Once there was a cruel or maybe an ugly, unwanted girl. Who always thought she deserves the worst. The girl who hates being appreciated. She wasn't intelligent,shrewd or smart. But she can rigoursly evaluate the ",
+            "posting_date": "2021-03-31T16:58:35.318Z",
+            "comments": [],
+            "content": [
+                84
+            ],
+            "theme": []
+        }
+    },
+    {
+        "model": "home.article",
+        "pk": 11,
+        "fields": {
+            "title": "A good human",
+            "author": "Dumb",
+            "likes": 0,
+            "shortcont": "The people whos name our Sarfaraj dont need appreciation cause they are already smart and intelligent! Also this sarafraj is smart pehle se hi. Hes kind,good hearted or bhi bahut qualities lekin abhi bas check ",
+            "posting_date": "2021-03-31T17:00:30.835Z",
+            "comments": [],
+            "content": [
+                101
+            ],
+            "theme": [
+                6
+            ]
+        }
+    },
+    {
+        "model": "home.username",
+        "pk": 1,
+        "fields": {
+            "username": "sarfaraj"
+        }
+    },
+    {
+        "model": "home.username",
+        "pk": 2,
+        "fields": {
+            "username": "ifuu"
+        }
+    },
+    {
+        "model": "home.username",
+        "pk": 3,
+        "fields": {
+            "username": "muski0786"
+        }
+    },
+    {
+        "model": "home.username",
+        "pk": 4,
+        "fields": {
+            "username": "nandeene_"
+        }
+    },
+    {
+        "model": "home.username",
+        "pk": 5,
+        "fields": {
+            "username": "idiot"
+        }
+    },
+    {
+        "model": "home.username",
+        "pk": 6,
+        "fields": {
+            "username": "muraad_74"
+        }
+    },
+    {
+        "model": "home.blogger",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "password": "canttellyou",
+            "title": "blogger",
+            "Username": 1,
+            "BP": 0,
+            "signup_date": "2021-03-31T12:21:10Z",
+            "article": [
+                2
+            ],
+            "theme": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "home.blogger",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "password": "nadeem_ifuu",
+            "title": "blogger",
+            "Username": 2,
+            "BP": 0,
+            "signup_date": "2021-03-31T16:01:26.328Z",
+            "article": [
+                6
+            ],
+            "theme": [
+                6
+            ]
+        }
+    },
+    {
+        "model": "home.blogger",
+        "pk": 3,
+        "fields": {
+            "user": 4,
+            "password": "muskan07",
+            "title": "blogger",
+            "Username": 3,
+            "BP": 0,
+            "signup_date": "2021-03-31T16:11:20.759Z",
+            "article": [
+                7
+            ],
+            "theme": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "home.blogger",
+        "pk": 4,
+        "fields": {
+            "user": 5,
+            "password": "nandeene28",
+            "title": "blogger",
+            "Username": 4,
+            "BP": 0,
+            "signup_date": "2021-03-31T16:52:16.967Z",
+            "article": [
+                9
+            ],
+            "theme": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "home.blogger",
+        "pk": 5,
+        "fields": {
+            "user": 6,
+            "password": "12345",
+            "title": "blogger",
+            "Username": 5,
+            "BP": 0,
+            "signup_date": "2021-03-31T16:56:54.990Z",
+            "article": [
+                10,
+                11
+            ],
+            "theme": []
+        }
+    },
+    {
+        "model": "home.blogger",
+        "pk": 6,
+        "fields": {
+            "user": 7,
+            "password": "mahfuj&0786",
+            "title": "blogger",
+            "Username": 6,
+            "BP": 0,
+            "signup_date": "2021-03-31T17:18:57.185Z",
+            "article": [],
+            "theme": []
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2021-03-31T13:48:39.526Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "1",
+            "object_repr": "fontstyles object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2021-03-31T13:48:53.919Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "2",
+            "object_repr": "fontstyles object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2021-03-31T13:49:08.476Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "3",
+            "object_repr": "fontstyles object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2021-03-31T13:49:22.302Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "4",
+            "object_repr": "fontstyles object (4)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2021-03-31T13:51:22.860Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "4",
+            "object_repr": "fontstyles object (4)",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2021-03-31T13:51:28.403Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "5",
+            "object_repr": "fontstyles object (5)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2021-03-31T13:51:40.722Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "6",
+            "object_repr": "fontstyles object (6)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2021-03-31T13:51:52.788Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "7",
+            "object_repr": "fontstyles object (7)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2021-03-31T13:52:19.829Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "8",
+            "object_repr": "fontstyles object (8)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2021-03-31T13:52:35.552Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "9",
+            "object_repr": "fontstyles object (9)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2021-03-31T13:53:58.029Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "10",
+            "object_repr": "fontstyles object (10)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2021-03-31T13:54:10.743Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "11",
+            "object_repr": "fontstyles object (11)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2021-03-31T13:54:22.120Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "12",
+            "object_repr": "fontstyles object (12)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2021-03-31T13:54:33.987Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "13",
+            "object_repr": "fontstyles object (13)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2021-03-31T13:54:47.544Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "14",
+            "object_repr": "fontstyles object (14)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2021-03-31T13:55:15.863Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "15",
+            "object_repr": "fontstyles object (15)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2021-03-31T13:55:31.153Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "16",
+            "object_repr": "fontstyles object (16)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2021-03-31T13:55:45.199Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "17",
+            "object_repr": "fontstyles object (17)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2021-03-31T13:56:04.276Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "18",
+            "object_repr": "fontstyles object (18)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2021-03-31T13:56:28.816Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "19",
+            "object_repr": "fontstyles object (19)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2021-03-31T13:56:39.480Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "20",
+            "object_repr": "fontstyles object (20)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2021-03-31T13:57:23.761Z",
+            "user": 2,
+            "content_type": 3,
+            "object_id": "21",
+            "object_repr": "fontstyles object (21)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2021-03-31T14:23:14.459Z",
+            "user": 2,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2021-03-31T14:24:51.057Z",
+            "user": 2,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2021-03-31T14:43:42.145Z",
+            "user": 2,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"theme\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2021-03-31T15:06:35.962Z",
+            "user": 2,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"theme\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2021-03-31T16:05:34.309Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2021-03-31T16:29:30.953Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2021-03-31T16:29:49.685Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2021-03-31T17:29:48.072Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2021-03-31T19:28:58.669Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "defaultthemes object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2021-03-31T19:29:06.943Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "defaultthemes object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2021-03-31T19:29:20.520Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "defaultthemes object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2021-03-31T19:40:01.769Z",
+            "user": 2,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": " Sarfaraj Ansari,sarfaraj,sakiri4444@gmail.com ",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add article",
+            "content_type": 1,
+            "codename": "add_article"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change article",
+            "content_type": 1,
+            "codename": "change_article"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete article",
+            "content_type": 1,
+            "codename": "delete_article"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view article",
+            "content_type": 1,
+            "codename": "view_article"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add feedback",
+            "content_type": 2,
+            "codename": "add_feedback"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change feedback",
+            "content_type": 2,
+            "codename": "change_feedback"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete feedback",
+            "content_type": 2,
+            "codename": "delete_feedback"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view feedback",
+            "content_type": 2,
+            "codename": "view_feedback"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add fontstyles",
+            "content_type": 3,
+            "codename": "add_fontstyles"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change fontstyles",
+            "content_type": 3,
+            "codename": "change_fontstyles"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete fontstyles",
+            "content_type": 3,
+            "codename": "delete_fontstyles"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view fontstyles",
+            "content_type": 3,
+            "codename": "view_fontstyles"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add gradient",
+            "content_type": 4,
+            "codename": "add_gradient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change gradient",
+            "content_type": 4,
+            "codename": "change_gradient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete gradient",
+            "content_type": 4,
+            "codename": "delete_gradient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view gradient",
+            "content_type": 4,
+            "codename": "view_gradient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add paragraphs",
+            "content_type": 5,
+            "codename": "add_paragraphs"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change paragraphs",
+            "content_type": 5,
+            "codename": "change_paragraphs"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete paragraphs",
+            "content_type": 5,
+            "codename": "delete_paragraphs"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view paragraphs",
+            "content_type": 5,
+            "codename": "view_paragraphs"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 6,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 6,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 6,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 6,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add username",
+            "content_type": 7,
+            "codename": "add_username"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change username",
+            "content_type": 7,
+            "codename": "change_username"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete username",
+            "content_type": 7,
+            "codename": "delete_username"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view username",
+            "content_type": 7,
+            "codename": "view_username"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add theme",
+            "content_type": 8,
+            "codename": "add_theme"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change theme",
+            "content_type": 8,
+            "codename": "change_theme"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete theme",
+            "content_type": 8,
+            "codename": "delete_theme"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view theme",
+            "content_type": 8,
+            "codename": "view_theme"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add defaultthemes",
+            "content_type": 9,
+            "codename": "add_defaultthemes"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change defaultthemes",
+            "content_type": 9,
+            "codename": "change_defaultthemes"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete defaultthemes",
+            "content_type": 9,
+            "codename": "delete_defaultthemes"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view defaultthemes",
+            "content_type": 9,
+            "codename": "view_defaultthemes"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add comments",
+            "content_type": 10,
+            "codename": "add_comments"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change comments",
+            "content_type": 10,
+            "codename": "change_comments"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete comments",
+            "content_type": 10,
+            "codename": "delete_comments"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view comments",
+            "content_type": 10,
+            "codename": "view_comments"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add blogger",
+            "content_type": 11,
+            "codename": "add_blogger"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change blogger",
+            "content_type": 11,
+            "codename": "change_blogger"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete blogger",
+            "content_type": 11,
+            "codename": "delete_blogger"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view blogger",
+            "content_type": 11,
+            "codename": "view_blogger"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 12,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 12,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 12,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 12,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 13,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 13,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 13,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 13,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 14,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 14,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 14,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 14,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 57,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 15,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 58,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 15,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 59,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 15,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 60,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 15,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 61,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 16,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 62,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 16,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 63,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 16,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 64,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 16,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 65,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 17,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 66,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 17,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 67,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 17,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 68,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 17,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$s1qbH2FSOW5Q9O7KHDoEzi$x18ML3Ezov15iykppxSJ2ZF4GwogOUit4QEAX4Y+cU4=",
+            "last_login": "2022-09-17T06:32:36.339Z",
+            "is_superuser": true,
+            "username": "sarfaraj",
+            "first_name": "",
+            "last_name": "",
+            "email": "com.sarfarajansari@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-03-31T12:18:15.398Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$ZpVeN5VPBLTW$pPwNyi0cUKEkBLdrhaM2xfD8/AWLJaRqk9HkBK0/Krw=",
+            "last_login": "2021-03-31T13:43:53.550Z",
+            "is_superuser": true,
+            "username": "srfrj",
+            "first_name": "",
+            "last_name": "",
+            "email": "sakiri4444@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-03-31T13:43:19.397Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "home",
+            "model": "article"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "home",
+            "model": "feedback"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "home",
+            "model": "fontstyles"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "home",
+            "model": "gradient"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "home",
+            "model": "paragraphs"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "home",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "home",
+            "model": "username"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "home",
+            "model": "theme"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "home",
+            "model": "defaultthemes"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "home",
+            "model": "comments"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "home",
+            "model": "blogger"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 14,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 15,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 16,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 17,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "2yefz08d4cvmyc6pwnc2of5p5wzevais",
+        "fields": {
+            "session_data": "OGIyZWZjMWIwZmU3NThkM2ZjZWRkYTA3YzZiNTA3ZjMwZjBlM2Y0YTp7ImVtYWlsIjoibmFuZGVlbmVzdXJ3YWRlMjhAZ21haWwuY29tIiwib3RwIjo0MDQ5NjcsInN0YXR1cyI6InZlcmlmaWVkIiwidXNlciI6eyJuYW1lIjoiTmFuZGVlbmUiLCJlbWFpbCI6Im5hbmRlZW5lc3Vyd2FkZTI4QGdtYWlsLmNvbSIsInBhc3N3b3JkIjoibmFuZGVlbmUyOCIsInRpdGxlIjoiYmxvZ2dlciIsInVzZXJuYW1lIjoibmFuZGVlbmVfIiwiaWQiOjR9fQ==",
+            "expire_date": "2021-04-14T16:52:16.993Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "5ev0wu44iy2zbl1xem2eny6ywtx24wkl",
+        "fields": {
+            "session_data": "NWY0ZWUzMTU3OGIzMzE3Y2I2ZmY5NTZkMmFiNWY3MTBmNWI0Njg3Yzp7InVzZXIiOnsibmFtZSI6IkR1bWIiLCJlbWFpbCI6Im1hc3VtYXNoYWlraGVkdUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjEyMzQ1IiwidGl0bGUiOiJibG9nZ2VyIiwidXNlcm5hbWUiOiJpZGlvdCIsImlkIjo1fSwic3RhdHVzIjoidmVyaWZpZWQifQ==",
+            "expire_date": "2021-04-14T17:22:32.196Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "5tlq36fq8jck2zeqrnbgos65kkbjot09",
+        "fields": {
+            "session_data": "YmEwMmI0ZWMzNTNlODZmM2Q5ZWIwZjdlY2MwNWVhNTg3YjY2ZmQwODp7ImVtYWlsIjoibWFoZnVqMDA3Nzg4NjZAZ21haWwuY29tIiwib3RwIjo2NzY1MTcsInN0YXR1cyI6InZlcmlmaWVkIiwidXNlciI6eyJuYW1lIjoiTWcBZosnd0",
+            "expire_date": "2021-04-14T20:05:21.749Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "xluxdw6qs0lzzpocfbasqmxue5iob79n",
+        "fields": {
+            "session_data": "NzBjM2M4ZWI4YjM1N2IyMGNlNmViNGZlMzA4YmY3OTM4MGM2M2FlNDp7InJlYWRlciI6eyJuYW1lIjoiTXVza2FuIHNoYWlraCAiLCJlbWFpbCI6Im11c2thbnNoYWlraDA3MjAwM0BnbWFpbC5jb20iLCJpZCI6M30sImVtYWlsIjoibXVza2Fuc2hhaWtoMDcyMDAzQGdtYWlsLmNvbSIsIm90cCI6NzE1Mjc4LCJzdGF0dXMiOiJ2ZXJpZmllZCIsInVzZXIiOnsibmFtZSI6Ik11c2thbiBzaGFpa2giLCJlbWFpbCI6Im11c2thbnNoYWlraDA3MjAwM0BnbWFpbC5jb20iLCJwYXNzd29yZCI6Im11c2thbjA3IiwidGl0bGUiOiJibG9nZ2VyIiwidXNlcm5hbWUiOiJtdXNraTA3ODYiLCJpZCI6M319",
+            "expire_date": "2021-04-14T16:11:20.787Z"
+        }
+    }
+]
