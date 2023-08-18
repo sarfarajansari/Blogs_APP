@@ -84,7 +84,7 @@ DATABASES = {
 }
 
 DATABASES['default'] = dj_database_url.config(
-    default="postgres://default:uxSb6ahW1gti@ep-round-cloud-63148585.us-east-1.postgres.vercel-storage.com:5432/verceldb",
+    default="postgres://default:uxSb6ahW1gti@ep-round-cloud-63148585-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb",
     conn_max_age=600,
 
 )
