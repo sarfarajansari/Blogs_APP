@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import dj_database_url,psycopg2
+import dj_database_url
 import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -76,26 +76,19 @@ WSGI_APPLICATION = 'blogs.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-DATABASE={
+DATABASES = {
     'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'de11am6516og3p',
-       'USER': 'qixzhezxrzwuuk',
-       'PASSWORD': '591d74e54042c8e9c1f6e03247ef05f46ef0a6c902f913293c27bcdd572df02e',
-       'HOST': 'ec2-34-200-205-45.compute-1.amazonaws.com',
-       'PORT': '5432',
-       'OPTIONS': {
-        'isolation_level': psycopg2.extensions.ISOLATION_LEVEL_SERIALIZABLE,
-    },
-   }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
+
+DATABASES['default'] = dj_database_url.config(
+    default="postgres://default:uxSb6ahW1gti@ep-round-cloud-63148585.us-east-1.postgres.vercel-storage.com:5432/verceldb",
+    conn_max_age=600,
+
+)
+
 
 
 # Password validation
