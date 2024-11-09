@@ -28,6 +28,7 @@ SECRET_KEY = 'hlhcu2o7!vons4*laods2ar3eluccc9-lh24)1v#+li@1dhna5'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://blogs-app-0x80.onrender.com'] 
 
 
 # Application definition
